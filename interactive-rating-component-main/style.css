@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+.container{
+    background-color:hsl(213, 19%, 18%) ;
+    max-width: 400px;
+    border-radius: 2rem;
+    
+}
+.image{
+    width: 50px;
+    height: 50px;
+    background-color: hsl(216, 12%, 22%);
+    border-radius: 100%;
+    position: relative;
+    margin: 1.6rem;
+
+}
+.image img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    margin: 1.8rem 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+p{
+    margin: 1.2rem;
+    color: hsl(217, 12%, 63%);
+}
+.ratings-container{
+    display: flex;
+    margin: 1.6rem 0;
+    justify-content: center;
+    align-items: center;
+
+}
+.rating{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: hsl(216, 12%, 22%);
+    border-radius: 100%;
+    position: relative;
+    margin-right: 1.4rem;
+}
+.rating.active{
+    background-color: hsl(217, 12%, 63%);
+    
+}
+.rating.rating.active small{
+    color: white;
+}
+.rating:hover{
+    background-color: hsl(25, 97%, 53%);
+    
+}
+.rating:hover small{
+    color: white;
+}
+.rating small{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: hsl(217, 12%, 63%);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin:1.8rem 0;
+  
+}
+button{
+    background-color: hsl(25, 97%, 53%);
+    width: 90%;
+    padding: 0.6rem 0;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.08rem;
+}
+button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+.score-container{
+    background-color: hsl(213, 19%, 18%);
+    max-width: 400px;
+    border-radius: 2rem;
+    display: none;
+}
+.score-container .image-thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.8rem 0;
+}
+.image-thanks img{
+    font-size: 3rem;
+}
+.score{
+    background-color: hsl(216, 12%, 22%) ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 6rem;
+    border-radius: 3rem;
+  
+}
+.score p{
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+}
+.score-container h2{
+    text-align: center;
+    color: white;
+    
+}
+.score-container p{
+    text-align: center;
+    
+}
+        
+
+.attribution{
+     font-size: 11px; 
+     text-align: center; 
+     color: white;
+     margin-top: 3rem;
+    }
+.attribution a{
+         color: hsl(228, 45%, 44%); 
+        }
+
+@media only screen and (max-width:450px) {
+        .container{
+            max-width:250px;           
+        }
+        .score-container{
+            max-width: 250px;
+        }
+        
+}
